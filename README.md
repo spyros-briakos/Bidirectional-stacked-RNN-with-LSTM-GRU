@@ -1,5 +1,5 @@
 # Bidirectional-stacked-RNN-with-LSTM-GRU
-Our goal is to develop a sentiment classifier using a bidirectional stacked RNN with LSTM/GRU cells for twitter sentiment analysis, from this [dataset](https://drive.google.com/file/d/1dTIWNpjlrnTQBIQtaGOh0jCRYZiAQO79/view).
+Our goal is to develop a sentiment classifier using a bidirectional stacked RNN with LSTM/GRU cells for twitter sentiment analysis, from this [dataset](https://drive.google.com/file/d/1dTIWNpjlrnTQBIQtaGOh0jCRYZiAQO79/view), which was cleaned in [this notebook]((https://github.com/spympr/Bidirectional-stacked-RNN-with-LSTM-GRU/blob/main/PreProcessing.ipynb).
 
 We implemented a class, called LSTM_GRU, where with help of her we managed to experiment with:
 * Number of stacked RNNs
