@@ -1,17 +1,15 @@
 # Bidirectional-stacked-RNN-with-LSTM-GRU
-Our goal is to develop a sentiment classifier using a bidirectional stacked RNN with LSTM/GRU cells for twitter sentiment analysis.
+Our goal is to develop a sentiment classifier using a bidirectional stacked RNN with LSTM/GRU cells for twitter sentiment analysis, from this [dataset](https://drive.google.com/file/d/1dTIWNpjlrnTQBIQtaGOh0jCRYZiAQO79/view).
 
+We implemented a class, called LSTM_GRU, where with help of her we managed to experiment with:
+* Number of stacked RNNs
+* Number of hidden layers
+* Type of cells
+* Gradient clipping
+* Dropout probability
 
-432423432
-For
-the development of the models, you can experiment with the number of stacked RNNs,
-the number of hidden layers, type of cells, skip connections, gradient clipping and dropout
-probability. Document the performance of different configurations on your final report.
-Use the Adam optimizer and the binary cross-entropy loss function. Remember to transform the predicted logits to probabilities using a sigmoid function. You should also utilize
-pre-trained word embeddings (GloVe) as the initial embeddings to input on your models.
-For the best model you found:
-• Compute precision, recall and F1 for each class.
-• Plot the loss vs. epochs curve and the ROC curve and explain what you see.
-• Compare with your best model from Homework 2.
-Your solution should be implemented in PyTorch and we expect your report to be well
-documented.
+During our experimental procedure, we utilize the **Adam optimizer** and the ***Binary Cross-Entropy (BCE)*** loss function. 
+Each experiment, which took place, was evaluated from learning curves, classification report (which includes precision, recall and F1 score for each class) and ROC curve plot.
+In this last checkpoint of this [notebook](https://github.com/spympr/Bidirectional-stacked-RNN-with-LSTM-GRU/blob/main/LSTM_GRU_Classifier.ipynb), we decided to keep LSTM model, which aimed to have a pretty descent performance!
+
+Note that notebook is well reported and was implemented with ***Machine Learning Library Pytorch***. Running's procedure took place on ***Google Colab***, enhanced with ***Cuda GPU!***
